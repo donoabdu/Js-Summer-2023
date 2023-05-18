@@ -1,0 +1,30 @@
+console.log('check');
+
+// question 1 program coding 
+let name = 'Dono';
+console.log(`first name is ${name}`);
+
+// question 2 program coding;
+let age = 20;
+console.log(typeof age);
+console.log(`age ${age}`);
+
+//question 3 program coding;
+let student = true;
+console.log(typeof student);
+console.log(`i am student ${student}`);
+
+// question 4 program coding;
+let colors =['Red', 'Blue', 'Pink', 'Yellow'];
+console.log(colors);
+
+// question 5 program coding;
+let person ={
+    firstName : 'Dona',
+    lastName : 'Abdurakhmonova',
+    children : 'Kelly,Chloe',
+    favoriteSport :'Basketball',
+    age : 32
+}
+console.log(typeof person);
+console.log(`person ${person}`);
