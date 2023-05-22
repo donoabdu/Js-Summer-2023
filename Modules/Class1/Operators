@@ -1,0 +1,44 @@
+console.log('operators');
+
+let num = 10;
+let num2 = 3;
+let remeinder = 10%3;
+console.log(`remeidner ${remeinder}`);
+
+//Assigment operator;
+let num3 = 5;
+let result = 5+2;
+console.log(`result ${result}`);
+
+let gassPrice = 10;
+let total = 2.5*10;
+console.log(`total price ${total}`);
+
+//Comparison 
+let age1 = 15;
+let age2 = 25;
+let age1GrAge2 = age1>age2;
+console.log(`age1 greater age2 ${age1GrAge2 }`);
+
+let name1 ='Dona';
+let name2 = 'John Doe';
+console.log( name1 !=name2);
+//logical;
+
+let costume1 ='isMemeber';
+let costumer2 ='hasCupon';
+let shippingEligable =true;
+console.log(`constum1 ===costumer2 && freeshipping|| not eligable${shippingEligable}`)
+console.log(`member is eligable free shipping${shippingEligable}`);
+
+let num4=5;
+let result1 =(5 !==0);
+console.log(`result ${result1}`);
+//turnary operator;
+let age = 21;
+let isCanVote = age>=21 ? true : false;
+console.log(` is eligable to vote ${isCanVote}`);
+
+let banana = 'no sale';
+let isBananaOnSale = banana? true : false;
+console.log(isBananaOnSale);
