@@ -1,0 +1,90 @@
+// declare a new string variable with name coder and set value to 'i am 
+//a good programer'
+//typeof
+
+ let coder ='i am a good programmer';
+ coder = 'i am a good programer';
+ console.log(coder);
+ console.log(typeof coder);
+
+ //length;
+ let coderLength = coder.length;
+ console.log(coder.length);
+
+ // to upper case;
+ let coderUpperCase = coder.toUpperCase();
+ console.log(`coder to Uppercase ${coderUpperCase}`);
+
+ //to lower case;
+ let coderLowerCase = coder.toLowerCase();
+ console.log(`coder to lower case ${coderLowerCase}`);
+
+ // includes word 'good'
+ let coderIncludes_good = coder.includes('good');
+ console.log(`includes good ${coderIncludes_good}`);
+ 
+ //didnt understand how to strip out word
+
+// ends with; 
+let coderEndsWith_programmer = coder.endsWith('programmer');
+console.log(`ends with programmer ${coderEndsWith_programmer}`);
+
+//starts with;
+let coderStartsWith_i_am = coder.startsWith('i_am');
+console.log(`starts with i am  ${coderStartsWith_i_am}`);
+
+// split;
+let split_good = coder.split('good');
+console.log(coder.split('good'));
+
+//slice;
+let slice_programer = coder.slice('programer');
+console.log(coder.slice('programer'));
+
+// concat;
+let coderr = sam1='i', sam2 ='am', sam3 ='good', sam4 =' ';
+console.log(`\nsam1 ${sam1}`);
+console.log(`\nsam2 ${sam2}`);
+console.log(`\nsam3 ${sam3}`);
+let coderrs= coderr.concat( sam1, sam4, sam2, sam4, sam3, sam4);
+console.log(`\nsam1, sam2, sam3,sam2  ${coderrs}`);
+
+let coderr1 = sam1+sam4+sam2+sam4+sam3;
+console.log(`\nsam1+sam4+sam2+sam4+sam3 ${coderr1}`);
+
+//charAt;
+let charAt2 = coder.charAt(2);
+console.log(`\nindex at char 2 ${charAt2}`);
+
+// indexof;
+console.log(`coder ${coder}`);
+let indexOf_m = coder.indexOf('m');
+console.log(`index of_m ${indexOf_m}`);
+
+let indexOf_Good = coder.indexOf('Good');
+console.log(`index of_Good ${indexOf_Good}`);
+
+// last indexOf;
+let lastIndexOf_m = coder.lastIndexOf('m');
+console.log(`last index of_m ${lastIndexOf_m}`);
+
+let lastIndexOf_Good = coder.lastIndexOf('Good');
+console.log(` last index of_Good ${lastIndexOf_Good}`);
+
+// replace;
+let coder_Replace_g_y = coder.replace('g', 'y');
+console.log(`\nreplace g with y ${coder_Replace_g_y}`);
+
+let coder_Replace_All_m_w = coder.replace(/m/g,'w');
+console.log(`\nreplace all m with w ${coder_Replace_All_m_w}`);
+
+let coder_Replace_m_w = coder.replace(/m/ig,'w');
+console.log(`\nreplace all m with w ${coder_Replace_m_w}`);
+
+// localCompare;
+let coder1 = 'i am good', coder2= 'I am Good';
+console.log(`\ncoder1 ${coder1}`);
+console.log(`\ncoder2 ${coder2}`);
+let localeCompareResult = coder1.localeCompare(coder2);
+console.log(`local compare result ${localeCompareResult}`);
+
