@@ -1,0 +1,60 @@
+let students =['Abigel', 'Martha', 'Kelly', 'Chloe', 'Kate'];
+// length;
+let stundentsLength = students.length;
+console.log(`students length ${stundentsLength}`);
+
+//popped function
+let popedValue = students.pop();
+console.log(`\nremove the last value ${popedValue}`);
+
+// shift function();
+
+let shiftValue = students.shift();
+console.log(`\nremove first value ${shiftValue}`);
+
+console.log(`students ${students}`);
+
+// push function();
+let lenAfterPushFunction = students.push('John');
+console.log(`length after push function ${lenAfterPushFunction}`);
+
+// unshift function();
+let lenAfterUnshiftFunction = students.unshift('Kate');
+console.log(`\nlength after unshift function ${lenAfterUnshiftFunction}`);
+
+console.log(`\nstudents value after push and unshift function ${students}`);
+
+// splice function;
+// starting from index-2, remove 1;
+console.log(`students ${students}`);
+let students_splice1 = students.splice(2, 1);
+console.log(`\nvalue of students after splice ${students_splice1}`);
+
+// starting from index-3 remove-0 add Kate 
+let students_splice = students.splice(3, 0, 'Kate');
+console.log(`\nstudents value after splice ${students_splice}`);
+
+// includes funtion:
+// is Jhon present in a given idex of an Array;
+
+console.log(`students ${students}`);
+
+let isPresent_John = students.includes('John');
+console.log(`is John present in array  ${isPresent_John }`);
+
+//indexOf function:
+let indexOf_Kate = students.indexOf('Kate');
+console.log(`\nindex of Kate ${indexOf_Kate}`);
+
+//last indexOf function:
+let lastIndexOf_Kate =students.lastIndexOf('Kate');
+console.log(`\nlast idex of Kate ${lastIndexOf_Kate}`);
+
+//reverse function;
+
+console.log(`students ${students}`);
+students.reverse();
+console.log(`\nstudents after reverse ${students}`);
+
+//let isEqual = isFirstIndex === LastIndex();
+//console.log(`is equl ${isEqual}`);
