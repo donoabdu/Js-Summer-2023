@@ -1,0 +1,59 @@
+//console.log('check');
+
+//let number = 10;
+//if(numebr % 2 === 0){
+    //console.log(`number is even ${number}`);
+
+//}else{
+    //console.log(`number is odd ${number}`);
+//}
+
+let age = 24;
+if(age < 18){
+    console.log('you are a minor');
+
+}else if (age >= 65){
+    console.log('you are an adult');
+}else if (age > 65){
+    console.log('you are a sineor citizen');
+}else{ 
+    console.log('you are still young');
+
+}
+let letter  = 'e';
+if(letter.localeCompare('vowel') === 0 || letter.localeCompare('consonant') ===0){
+    console.log('letter is vowel');
+}else{
+    console.log('letter is consonant');
+}
+
+let password = 'Test1233';
+if(password.length<8){
+    console.log('Password too short');
+}else if(password.includes('Test1233')){
+    console.log('password accepted');
+}else{
+    console.log('Password rejected');
+
+}
+
+if(numberOne > numberTwo && numberOne >numberThree){
+    console.log(' numberOne is the largest number');
+}else if(numberTwo >numberThree && numberTwo >numberOne){
+    console.log('numberThree is the largest number');
+}else if(numberThree >numberTwo && numberThree > numberOne){
+    console.log(' numberThree is the largest number');
+}else{
+    console.log(' all numbers are equal');
+}
+
+   
+ //if (numberOne > numberTwo && numberOne > numberThree) {
+     //console.log(`Largest number is in numberOne-variable with value -> ${numberOne}`);
+ //}else if (numberTwo > numberThree && numberTwo > numberOne) {
+    // console.log(`Largest number is in numberTwo-variable with value -> ${numberTwo}`);
+ //} else if (numberThree > numberOne && numberThree > numberTwo) {
+    // console.log(`Largest number is in numberThree-variable with value -> ${numberThree}`);
+ //} else {
+    // console.log(`All numbers are equal to each other with value -> ${numberOne}`);
+ //} 
