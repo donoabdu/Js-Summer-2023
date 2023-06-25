@@ -1,0 +1,84 @@
+let employee ={
+    name: 'Kelly Shechtman',
+    age: 35,
+    salery: 200000,
+    jobTitle: 'Developer',
+    jobSchedule:[ 'Work', 'Take a break', 'Attand a meetings']
+
+}
+console.log(employee);
+//Q 2;
+let bankAccount ={
+    accountNumber: 3472958267,
+    accountBalance: 200000,
+    accountType: 'saving',
+    accountFunctions:[ 'deposit', 'withdraw', 'transfer']
+}
+console.log(bankAccount);
+
+//Q3;
+let dogs ={
+    breed: 'shihtzu',
+    age: 8,
+    color: 'wite and black',
+    dogFunctions:['bark', 'wag tail', 'fetch']
+}
+console.log(dogs);
+
+//Q4:
+
+let applProduct ={
+    propertyName: 'Chanel',
+    price: 350,
+    manufacture: 'France',
+    category: 1,
+}
+console.log(applProduct);
+
+//Q5 and Q6
+let applProduct1 ={
+    propertyName: 'Chanel',
+    price: 350,
+    manufacture: 'France',
+    category: 1,
+}
+console.log("adding  discription property ['new product'] in applProduct1");
+applProduct1['propertyDiscription']=['new product'];
+console.log(applProduct1);
+console.log("new 'price -10'in applProduct1");
+applProduct1.price=350+10,
+console.log(applProduct1);
+
+//Q7; 
+
+//let applProduct2 ={
+    //propertyName: 'Chanel',
+    //price: 350,
+    //manufacture: 'France',
+    //category: 1,
+//}
+
+//console.log('deleting 'propertyDiscription'from applProduct2');
+//console.log(`is delated 'propertyDiscription' attribute ${delete applProduct2.propertyDiscription}`);
+//console.log(applproduct2);
+
+//Q8;
+let blogPost =[
+    {
+        title: " The Importance of Regular Exercise",
+        author: "John Doe",
+        date: "2022-02-28",
+        content: "live longer life",
+    },
+    {
+        titte: "Tips for Eating Healthy on a Budget",
+        author:"Jane Smith",
+        date:'',
+        content: "Live longer life",
+    },
+
+
+];
+let isKey_date = 'date' in blogPost;
+console.log(`is 'date' present as of the keys ${isKey_date}` );
+
