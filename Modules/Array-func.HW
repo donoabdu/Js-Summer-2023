@@ -1,0 +1,163 @@
+console.log('check');
+
+//1-Write a function that takes an array of objects representing books and returns an array containing the titles of those books.
+let getBooksTitle =function(books){
+    return books.map((book) =>book.title);
+};
+let books =[
+    {
+        book: 'Atomic Habits',
+        title: 'Clear james',
+        
+    },
+
+    {
+        book: 'The Mind Of the Leader',
+        title: 'Rasmus Hougaard',
+        
+    },
+    {
+        book: 'Great',
+        title: 'Black Do'
+    }
+];
+let bookTitles = getBooksTitle(books);
+console.log(bookTitles);
+
+//2-Write a function that takes an array of objects representing products and returns an array containing only the products that are currently in stock.
+let getStuckProduct = function(products){
+    return products.filter((product) => product.stock!==0);
+}
+let products =[
+    {
+        product: 'desk',
+        stock: 3
+    },
+    {
+        product: 'lemp',
+        stock: 0
+    },
+    {
+        product: 'chair',
+        stock: 5
+    }
+    
+];
+let inStockProducts = getStuckProduct(products);
+console.log(inStockProducts);
+
+//3-Write a function that takes an array of objects representing users and returns the first user whose email address matches a given email.
+let findUserByEmail =(users, email)=>{
+    return users.find((user)=>user.email===email);
+};
+let users=[
+    {
+        user: 'Sita',
+        email: 'sitaii@gmail.com'
+    },
+    {
+        user: 'Dona',
+        email: 'dona@gmail.com'
+
+    },
+    {
+        user: 'Benny Don',
+        email: 'benny@gmail.com'
+    },
+    {
+        user: 'Benny',
+        email:'benny1@gmail.com'
+    }
+];
+let foundUser= findUserByEmail(users, 'benny@gmail.com');
+console.log(foundUser);
+
+//4-Write a function that takes an array of objects representing tasks and returns true if all the tasks are marked as complete, otherwise returns false.
+console.log(`\ntrue if all the tasks are marked as complite, otherwise fale`);
+function areAllTasksComplete(tasks){
+    return tasks.every(task=>task.complete);
+};
+let tasks1 =[
+    {
+        task: 'cooking',
+        complete: 'true'
+    },
+    {
+        task: 'Baking',
+        complete: 'true'
+    },
+    {
+        task: 'shopping',
+        complete: 'false'
+    },
+    {
+        task: 'homewark',
+        complete: 'false'
+    }
+];
+console.log(areAllTasksComplete(tasks1));
+
+
+//5-Write a function that takes an array of objects representing purchases and returns the total amount spent on those purchases.
+
+function purchaseTotal(purchases){
+    let totalAmount =0;
+    purchases.forEach((purchase)=>{
+        totalAmount+=purchase.purchase1;
+    });
+    return totalAmount
+}
+let purchase1 =[
+    {
+        purchase1:100,
+    },
+    {
+        purchase1:50,
+    },
+    {
+        purchase1:30,
+    },
+    {
+        purchase1:0
+    }
+];console.log(purchaseTotal(purchase1));
+
+//6-Write a function that takes an array of numbers as input and returns the sum of all the numbers in the array.
+function sumArray(numbers){
+    let sum=0;
+    numbers.forEach(num=>{
+        sum+=num;
+    });
+    return sum;
+}
+let numbers =[10, 11, 12, 14, 16,20];
+let result =sumArray(numbers);
+console.log(result);
+
+
+//7-Write a function that takes an array of strings as input and returns a new array with all the strings converted to uppercase.
+
+function convertToUpperCase(strings){
+    return strings.map(sName=>sName.toUpperCase());
+}
+let strings =['Apple', 'Banana', 'cherry', 'kiwi','pinaple'];
+let newStringsUppercase=convertToUpperCase(strings);
+console.log(newStringsUppercase);
+
+//8-Write a function that takes an array of numbers as input and returns a new array with all the even numbers from the original array.
+
+function getEvenNumbers(numbers){
+    return numbers2.filter(num1=>num1%2===0);
+}
+let numbers2 =[1,2,3,4,5,6,7,8,9,10];
+let result1 =getEvenNumbers(numbers2);
+console.log(result1);
+
+//9-Write a function that takes an array of strings as input and returns a new array with all the strings that have a length of 4 or less.
+
+function stringLengthOf4(strings_1){
+    return strings_1.filter(str=>str.length<=4)
+}
+let strings_1=[ 'Mona', 'Lisa','Gabi', 'Jamiliya', 'Abiguel'];
+let newString_1=stringLengthOf4(strings_1);
+console.log(newString_1);
