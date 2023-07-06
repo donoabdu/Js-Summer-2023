@@ -1,0 +1,256 @@
+//Q1-Create a class called Animal that has a name property and a speak method. The speak method should log a message to the console saying "Hello, my name is {name}." 
+
+//Create an instance of the Animal class and call the speak method. 
+
+class animal {
+
+    info ={
+
+
+        name : 'Angel',
+
+
+    }
+
+
+speak()
+
+{
+
+    console.log(`Hello, my name is ${this.info.name}.`);
+
+}
+
+
+}
+
+
+let showinfo = new animal();
+
+showinfo.speak();
+
+//Q2-reate a class called Person that has name and age properties, and a greet method that logs a message to the console saying 
+
+ //"Hello, my name is {name} and I am {age} years old." Create an instanceof the Person class and call the greet method. */
+
+class person {
+
+
+    info = {
+
+        name: 'Storm',
+
+        age : 42,
+
+    }
+
+
+    greet(){
+
+
+        console.log(`Hello, my name is ${this.info.name} and I am ${this.info.age} years old.`);
+
+
+    }
+
+}
+let personInfo = new person();
+
+
+personInfo.greet();
+
+
+//Q3-Create a class called Car that has make, model, and year properties, and a start method that logs a message to the console saying "The {make} {model} is starting."
+ //Create an instance of the Car class and call the start method.
+
+
+class car {
+
+    carInfo ={
+        make : 'Dodge',
+        model : 'Challenger',
+        year : 2023,
+    }
+
+    start()
+    {
+        console.log(`The ${this.carInfo.make} ${this.carInfo.model} is starting`);
+    }
+}
+
+   //Q4-4. Create a class called Rectangle that has width and height properties, and a getArea method that returns 
+
+//the area of the rectangle. Create an instance of the Rectangle class and call the getArea method.
+
+class rectangle {
+
+
+    measurement = {
+
+        height : 5,
+
+        width : 5,
+
+    }
+
+
+    getArea(){
+
+        let area = (this.measurement.height*this.measurement.width)
+
+        console.log(`Area Of the Rectangle is : ${area}`);
+
+    }
+
+}
+
+
+let result = new rectangle();
+
+result.getArea();
+
+
+module.exports = rectangle;
+
+//Q5-5. Create a class called Square that extends the Rectangle class and has a sideLength property. Override the 
+
+//getArea method in the Square class to return the area of the square. Create an instance of the Square class and call the getArea method.
+ 
+const rectangler = require('');
+
+
+class Square extends rectangle {
+
+
+    measurement2 ={
+
+        sideLength:5,
+
+        height : 5,
+
+        width : 5,
+
+    
+
+    }
+
+
+    getArea(){
+
+        let area = (this.measurement2.height*this.measurement2.width*this.measurement2.sideLength)
+
+        console.log(`Area Of the Square is : ${area}`);
+
+    }
+
+}
+
+let newResult = new Square()
+
+newResult.getArea();
+
+//Q6-Create a class called BankAccount that has accountNumber, accountHolderName, and balance properties, and a deposit method 
+
+//that takes in an amount and adds it to the balance. Create an instance of the BankAccount class and call the deposit method with an amount.
+class BankAccount {
+
+    accountInfo = {
+
+        accountNumber: 33333333,
+
+        accountHolderName:'Storm',
+
+        balance: 0,
+
+
+    }
+
+  
+
+    deposit(addBlance)
+
+    {
+
+        this.accountInfo.balance+=addBlance;
+
+       
+
+    }
+
+} 
+
+
+let results = new BankAccount();
+
+results.deposit(1000);
+
+console.log(result.accountInfo);
+
+//Q7-Create a class called Person that has name and email properties, and a sendEmail method that takes in a 
+
+//message and sends an email to the person's email address. Create an instance of the Person class and call the sendEmail method with a message.
+class person1 {
+
+    emaiInfo={
+
+        name : 'Dona',
+
+        email : 'dona.abdugmail.com',
+
+    
+
+    }
+
+
+    sendEmail(message)
+
+    {
+
+        console.log(`'${message}' this is the message.\nEmail is Sent ${this.emaiInfo.email}`);
+
+    }
+
+}
+
+
+let emailSent = new person();
+
+emailSent.sendEmail('Hi Storm good morning');
+
+//Q8-. Create a class called Product that has name, price, and description properties, and a discount method that 
+
+//takes in a percentage and returns the discounted price. Create an instance of the Product class and call the discount method with a percentage.
+
+class product {
+
+    iphone= {
+   
+           name : 'iPhone',
+   
+           price : 999,
+   
+           manufacturer : 'USA',
+   
+           category : 'Electronics',
+   
+           description : 'iphone best smart phone 2023',
+   
+   
+       }
+   
+       getDiscount(amount)
+   
+       {
+   
+           this.iphone.price-=amount;
+   
+       }
+   
+   }
+   
+   
+   const discountAmount = new product();
+   
+   discountAmount.getDiscount(99);
+   
+   console.log(discountAmount.iphone);
